@@ -1,7 +1,7 @@
-## :collision: Welcome to my Github!
+## :collision: Welcome!
 
 :smiley: __Personal__  
-I am a creative problem solver that enjoys software development, design, and exploring new technologies.
+I am a creative problem solver that enjoys software development, pushing boundaries for design, and exploring new technologies.
 
 :mortar_board: __Education__  
 Mechatronics Engineering @ University of Waterloo (BASc Sep 2019 - Apr 2024)
