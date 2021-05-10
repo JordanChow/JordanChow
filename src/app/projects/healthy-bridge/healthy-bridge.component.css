@@ -1,0 +1,30 @@
+.container {
+    animation: fadeIn 2s ease-in-out; 
+}
+
+.text-container {
+    margin-bottom: 10px;
+}
+
+.long-text-container {
+    margin-bottom: 50px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content:flex-start;
+    height: 50%;
+    align-items: center;
+}
+
+.flexbox-title
+{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}

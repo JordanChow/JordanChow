@@ -1,0 +1,148 @@
+.flex-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 100%;
+    border-bottom: .05rem solid #ccc;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.background-image {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    width: 400px;
+}
+
+.description {
+    padding-left: 14vw;
+    padding-right: 14vw;
+    padding-bottom: 150px;
+}
+
+.section {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+.about {
+    color: #41438D;
+    animation: slideInLeftText 1.5s ease-in-out;
+}
+
+.about-image {
+    max-width: 18vw;
+}
+
+.about-placeholder{
+    max-width: 18vw;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.about-text {
+    padding-left: 40px;
+    width: 100%;
+}
+
+.about-text-placeholder {
+    animation: slideInRight 1.5s ease-in-out;
+    width:100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.education {
+    color: #EDC513;
+    padding-top: 20px;
+    text-align: right;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.education-text {
+    animation: slideInLeftText 1s ease-in-out;
+}
+
+.education-image {
+    width: 60%;
+    height: 60%;
+    padding-left: 50px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.interest {
+    color: #BF1E2D;
+    padding-top: 20px;
+}
+
+.interest-image {
+    width: 30%;
+    height: 30%;
+    transform: rotate(-30deg);
+    margin-top: 10px;
+}
+
+.interests-text {
+    padding-left: 80px;
+}
+
+h1 {
+    color: #0d96f2;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0 !important;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeftText {
+    0% {
+      transform: translateX(-25%);
+      opacity: 0;
+    }
+  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(50%);
+      opacity: 0;
+    }
+  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+

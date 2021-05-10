@@ -1,0 +1,95 @@
+.flex-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 360px;
+    width: 100%;
+    border-bottom: .05rem solid #ccc;
+    position: relative;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.background-image {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    width: 400px;
+}
+
+.description {
+    padding-left: 14vw;
+    padding-right: 14vw;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    padding-right:10px;
+    position: relative;
+    bottom: 3px;
+    color:#FE9F00;
+}
+
+.text {
+    padding-top: 10px;
+    font-size: 1.3em;
+}
+
+.heading {
+    font-weight: 400;
+}
+
+a {
+    color: #0072a3;
+    opacity: 0.8;
+}
+
+a:visited {
+    color: #0072a3;
+    opacity: 0.8;
+}
+
+footer {
+    opacity: 0.5;
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeUp 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+
+      opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+  
+    100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+  
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

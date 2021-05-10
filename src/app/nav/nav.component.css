@@ -1,0 +1,57 @@
+.sidenav {
+    width:25vw;
+}
+
+img {
+    height: 50%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    margin-left: 15px;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+    max-width: none !important;
+    padding: 0px !important;
+}
+
+.nav-element {
+    margin-bottom: 100px;
+}
+
+.content-area {
+    padding: 0 !important;
+}
+
+.nav-icon{
+    position: relative;
+    bottom: 1px;
+    margin-right: 5px;
+}
+
+a {
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    font-size: 1.3em !important;
+} 
+
+.home-icon {
+    color: #257AAE;
+}
+
+.experience-icon {
+    color: #37b635;
+}
+
+.projects-icon {
+    color:#8B4BAF;
+}
+
+.contact-icon {
+    color: #FE9F00;
+}
+
+.main-container {
+    min-height: 100vh;
+}
+

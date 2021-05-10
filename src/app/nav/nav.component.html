@@ -1,0 +1,33 @@
+<clr-main-container>
+  <clr-header class="header header-4" style="background-color: #257AAE;">
+    <div class="branding">
+      <img src="assets/images/Logo.svg" alt="Logo">
+      <span class="title"><b>&emsp;Jordan Chow</b></span>
+    </div>
+  </clr-header>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+    <nav class="sidenav" [clr-nav-level]="1">
+      <section class="sidenav-content">
+        <a [routerLinkActiveOptions]="{ exact: true }" routerLink="/" routerLinkActive="active" class="nav-link hhome-text">
+          <clr-icon class="nav-icon home-icon" shape="home"></clr-icon>
+          Home
+        </a>
+        <a routerLink="./experience" routerLinkActive="active" class="nav-link">
+          <clr-icon class="nav-icon experience-icon" shape="terminal"></clr-icon>
+          Experience
+        </a>
+        <a routerLink="./projects" routerLinkActive="active" class="nav-link">
+          <clr-icon class="nav-icon projects-icon" shape="devices"></clr-icon>
+          Projects
+        </a>
+        <a routerLink="./contact" routerLinkActive="active" class="nav-link">
+          <clr-icon class="nav-icon contact-icon" shape="envelope"></clr-icon>
+          Contact
+        </a>
+      </section>
+    </nav>
+  </div>
+</clr-main-container>

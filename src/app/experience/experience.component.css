@@ -1,0 +1,265 @@
+.flex-parent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 360px;
+  width: 100%;
+  /* border-bottom: .05rem solid #ccc; */
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.background-image {
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.arrow {
+  width: 80%;
+  filter: invert(62%) sepia(55%) saturate(584%) hue-rotate(70deg) brightness(83%) contrast(97%);
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  display: block;
+}
+
+.card {
+  width: 30vw;
+  position: absolute;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-height: 300px;
+}
+
+.description-container {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 130px;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.slider {
+  display: flex;
+  width: 50px;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #919191;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.active {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.text-container {
+  margin-bottom: 10px;
+}
+
+.long-text-container {
+  margin-bottom: 50px;
+}
+
+.gif {
+  max-width: 100%;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-1 {
+  left: 1em;
+  top: 50px;
+  animation: xCircle1 16s infinite;
+}
+
+.circle-2 {
+  right: 8vw;
+  top: 10px;
+  animation: xCircle2 15s infinite;
+}
+
+.circle-3 {
+  right: 35vw;
+  top: 200px;
+  animation: xCircle2 45s infinite;
+}
+
+.circle-4 {
+  left: 10vw;
+  top: 600px;
+  animation: xCircle4 45s infinite;
+}
+
+.circle-5 {
+  right: 15vw;
+  top: 500px;
+  animation: xCircle2 45s infinite;
+}
+
+.circle-6 {
+  right: 10vw;
+  top: 800px;
+  animation: xCircle1 45s infinite;
+}
+
+.circle-7 {
+    left: 2vw;
+    top: 1400px;
+    animation: xCircle1 45s infinite;
+}
+
+.circle-1::after {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-color: #37b635;
+  opacity: 0.8;
+  animation: yCircle1 20s infinite;
+}
+
+.circle-2::after {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  animation: yCircle2 20s infinite;
+  height: 40px;
+  width: 40px;
+  background-color: #47ca5d;
+  opacity: 0.3;
+}
+
+.circle-3::after {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: #27ca50;
+  animation: yCircle2 30s infinite;
+  opacity: 0.1;
+}
+
+.circle-4::after {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-color: #34aa34;
+  animation: yCircle4 50s infinite;
+  opacity: 0.1;
+}
+
+.circle-5::after {
+  content: '';
+  border-radius: 50%;
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-color: #277727;
+  animation: yCircle1 50s infinite;
+  opacity: 0.3;
+}
+
+.circle-6::after {
+    content: '';
+    border-radius: 50%;
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: #4da04d;
+    animation: yCircle2 30s infinite;
+    opacity: 0.4;
+}
+
+.circle-7::after {
+    content: '';
+    border-radius: 50%;
+    display: block;
+    height: 12px;
+    width: 12px;
+    background-color: #44b36e;
+    animation: yCircle4 30s infinite;
+    opacity: 0.5;
+}
+
+  
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes xCircle1 {
+  50% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes yCircle1 {
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes xCircle2 {
+  50% {
+    transform: translateX(-40px);
+  }
+}
+
+@keyframes yCircle2 {
+  50% {
+    transform: translateY(40px);
+  }
+}
+
+@keyframes xCircle4 {
+  50% {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes yCircle4 {
+  50% {
+    transform: translateY(-90px);
+  }
+}

@@ -1,0 +1,11 @@
+<div class="card" [ngStyle]="{'border-top-color': currentCard.colorHex}" [style.box-shadow]="getBoxShadow()">
+  <div class="card-header">
+    {{currentCard.firstHeader}} — <span
+      [ngStyle]="{'color': currentCard.colorHex}">{{currentCard.secondHeader}}</span>
+  </div>
+  <div class="card-block">
+    <div class="card-text">
+      {{currentCard.body}}
+    </div>
+  </div>
+</div>

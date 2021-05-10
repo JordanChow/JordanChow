@@ -1,0 +1,124 @@
+<div class="container">
+    <h1 style="font-weight: bold;">Software
+        <span style="color: #37b635;"> Developer</span>
+        <span> — PEER Group</span> 
+    </h1>
+    <p style="margin-top: 0 !important;">Jan - Apr 2021</p>
+    
+    <p class="text-container">At PEER Group, I specialized in the web development tech stack, developing a strong
+      skill set in web applications and familiarizing myself with REST APIs, HTTP requests, Selenium WebDriver, various 
+      front-end technologies, and the MVC design pattern.
+    </p>
+    <p class="text-container">
+      After I had gained exposure to the tech stack and workflow at PEER Group as a QA Specialist, I was given a lot
+      more responsibility as a developer. Every bug, task, feature, or new application that I was assigned to, I was
+      given complete freedom and control on how I wanted to design and implement it. Therefore, I spearheaded multiple
+      new features and applications, working closely with my manager to generate requirements and optimize my solutions.
+    </p>
+    <p class="text-container">
+      This level of ownership over my work, really helped develop my planning and designing abilities, as well as
+      independent problem solving abilities. With lots of responsibilities, I learned to adapt many roles - creating
+      mockups and UI designs in Figma, generating functional requirements, documenting new features, researching new
+      technologies to use, designing database schemas, implementing the back-end, and finally developing the front-end.
+    </p>
+    <br>
+    
+    <h2 style="font-weight: bold; color:#37b635">Introduction</h2>
+    <p class="long-text-container">
+      Transitioning to the developer role definitely took some time adjusting and becoming familiar with the
+      technologies that were used at PEER Group. It was my first time working with a lot of the tools in the web
+      development scene. I began with completing an in-depth Udemy course on building an application with ASP.NET
+      Core and Angular. This course gave me all the necessary knowledge to design, create, and deploy a web application.
+    </p>
+    
+    <h4 style="font-weight: bold;">
+      <a href="https://github.com/JordanChow/LotTrackingSystem" target="_blank" style="color: black;">
+        Lot Tracking System
+      </a>
+    </h4>
+    <p class="text-container">
+      Finally, to apply the fundamental skills I learned, I was tasked with creating a lot tracking system. I was given
+      complete freedom on how I wanted to implement this, as long as the client's functional requirements were met.
+      As a result, I created a web application that serves to track lots processing through a system.
+    </p>
+    
+    <br>
+    <img class="image" src="assets/images/LotTrackingSystemDemo.gif" alt="Lot Tracking System">
+    
+    <p class="text-container">
+      This was a great experience to get me comfortable with ASP.NET Core, Angular, SQL Server, and the MVC design
+      pattern. Additionally, I was able to practice creating work items and allocating time for each requirement and 
+      task. I went through the code review process, discussed requirements with my manager, and presented my final 
+      application to the director of engineering. This all served as great exposure to the work environment, making 
+      me comfortable with the process for real client projects. I learned a tremendous amount from creating a web 
+      application from scratch and I was now ready to transition to bigger tasks.
+    </p>
+    <br>
+    
+    <h2 style="font-weight: bold;">My <span style="color:#37b635">Contributions</span> to PEER Group</h2>
+    <p class="long-text-container">
+      I began resolving bugs and implementing small features on our internal website that is used company wide. These bugs
+      and tasks helped me get familiar with the codebase and the internal website. I gained exposure to both the backend
+      (ASP.NET Core, C#, SQL Server, MVC pattern) and the front end (Angular, Typescript, HTML, CSS, NPM).
+    </p>
+    
+    <h4 style="font-weight: bold;">Absence Calendar View</h4>
+    <p class="text-container">
+      My next task was implementing a major feature - an absence calendar view. This would be a new component in the
+      website that allows all employees to view their absences and statutory holidays in a calendar view for any selected 
+      year. For managers, they are able to select a team and view all the absences for the employees on that team.
+    </p>
+    <br>
+    <img class="image" src="assets/images/TeamCalendar.gif" alt="Absence Calendar View">
+    
+    <p class="text-container">
+      This feature was crucial to optimize the efficiency of the absence viewing process. With this feature, employees can
+      easily see their requests as well as stat holidays. For managers, they can quickly see who on their team will be
+      absent when which will help for project management. The new feature will be implemented into production, during the
+      next release, impacting all of PEER Group.
+    </p>
+    
+    <p class="long-text-container">
+      This component was developed in Angular and leveraged the Clarity UI Design System to help bootstrap the screen. To
+      accomplish this, Angular resolvers and services were used to inject data into routes and receive data from the
+      backend to be displayed in a user friendly manner. The calendar supports customization for the users in the legend. 
+      Any color can be chosen and the default colors can be restored with a reset button.
+    </p>
+    
+    <h4 style="font-weight: bold;">Automated File Transfer Utility</h4>
+    <h6>The Problem</h6>
+    <hr>
+    <p class="text-container" style="margin-top: 10px;">
+      The next problem I was faced with was finding a way to upload and download files from an external ticketing site
+      (Autodesk PLM). For each ticket, there can be attachments associated with ticket. Due to domain restrictions, these attachments can
+      only be downloaded or uploaded from a virtual machine. My job was to find a way to automate the process of downloading
+      relevant attachments (based on a customizable query) and upload them to a file share site that can easily be access from PEER's home
+      computers. The opposite was also required - PEER employees can upload to the file share site and those files will then get uploaded
+      to the correct ticket in the PLM site.
+    </p>
+    <br>
+    <img class="image" src="assets/images/PLM.png" alt="PLM Site">
+    
+    <h6>The Solution</h6>
+    <hr>
+    <p class="long-text-container" style="margin-top: 10px;">
+      To solve this problem, I decided to use Selenium WebDriver to simulate a user to access the PLM site, CrushFTP API
+      to make HTTP requests for download and upload, and LiteDB to store the file information. The solution is a console 
+      application which is run as a script. The script checks the site for new files based on the database and upload or 
+      download the necessary files. It was set up to be executed on a scheduled basis on the VM using Window's Task 
+      Scheduler.
+    </p>
+    
+    <h4 style="font-weight: bold;">Performance Matrix Review</h4>
+    <p class="text-container">
+      The final feature I worked on was in the internal website, implementing a new screen. This screen would allow mangers
+      to generate performance matrix templates for employee role evaluation. The template would have different criteria and 
+      a level to gauge what the expected skill level is for each role (junior, intermediate, senior). There would also be a 
+      performance matrix form page, that allows employees and managers to fill out forms and view old forms.
+    </p>
+    <p class="text-container">
+      For this feature, I was responsible for not only the development, but also the planning and designing. I created a 
+      Functional Specification document, outlining the requirements for the feature, generated UI mockups in Figma, created
+      the database schema using dbdiagram.io, and finally, implemented the engines for the back-end.
+    </p>    
+</div>

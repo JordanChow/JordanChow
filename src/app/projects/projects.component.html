@@ -1,0 +1,43 @@
+<div class="flex-parent">
+  <button (click)="previousCard()">
+    <img src="assets/images/LeftArrow.svg" alt="Left Arrow" class="arrow">
+  </button>
+
+  <img class="background-image" src="assets/images/ProjectBackground.svg" alt="Experience Background">
+
+  <app-work-card class="card" [workCards]="workCards" (currentCardEvent)="currentCardEvent($event)"></app-work-card>
+
+  <button (click)="nextCard()">
+    <img src="assets/images/RightArrow.svg" alt="Right Arrow" class="arrow">
+  </button>
+</div>
+
+<div class="slider-container">
+  <div class="slider">
+    <ng-container *ngFor="let card of workCards">
+      <div class="dot"></div>
+    </ng-container>
+  </div>
+</div>
+
+<div class="description-container">
+  <div class="blob circle-1"></div>
+  <div class="blob circle-2"></div>
+  <div class="blob circle-3"></div>
+
+  <ng-container *ngIf="currentCardIndex == 1">
+    <app-dating-app></app-dating-app>
+  </ng-container>
+
+  <ng-container *ngIf="currentCardIndex == 2">
+    <app-claw-machine></app-claw-machine>
+  </ng-container>
+
+  <ng-container *ngIf="currentCardIndex == 3">
+    <app-healthy-bridge></app-healthy-bridge>
+  </ng-container>
+
+  <ng-container *ngIf="currentCardIndex == 4">
+    <app-fps-golf></app-fps-golf>
+  </ng-container>
+</div>

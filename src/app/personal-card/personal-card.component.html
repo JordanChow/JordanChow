@@ -1,0 +1,14 @@
+<div class="card" [ngStyle]="{'border-top-color': personalCard.colorHex}" [style.box-shadow]="getBoxShadow()">
+  <div class="card-header">
+    {{personalCard.firstHeader}}
+    <span [ngStyle]="{'color': personalCard.colorHex, 'font-weight': 'bold'}">
+      {{personalCard.secondHeader}}
+    </span>
+    {{personalCard.thirdHeader}}
+  </div>
+  <div class="card-block">
+    <div class="card-text">
+      {{personalCard.body}}
+    </div>
+  </div>
+</div>

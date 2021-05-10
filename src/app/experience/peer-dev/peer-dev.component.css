@@ -1,0 +1,26 @@
+.container {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.text-container {
+    margin-bottom: 10px;
+}
+
+.long-text-container {
+    margin-bottom: 50px;
+}
+
+.image {
+    width: 100%;
+}
+
+.blob {
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes fadeIn {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
